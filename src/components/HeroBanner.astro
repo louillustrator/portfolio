@@ -1,0 +1,67 @@
+---
+---
+
+<section class="hero-banner">
+  <div class="banner-content">
+    <div class="banner-text">
+      <h1>Creative Software Developer</h1>
+      <p class="banner-paragraph-text">
+        This is a blurb about me and how I'm great, freestar freestar Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo nec eros
+        nec egestas. Curabitur eu risus nibh. Nunc ullamcorper in augue luctus
+        molestie
+      </p>
+    </div>
+    <div class="banner-image">
+      <img
+        class="profile-image"
+        src="../../louiseWright.jpeg"
+        alt="illustration of a pink haired woman"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-banner {
+    background: pink;
+    padding: 5em 2em;
+    margin: 2em;
+    overflow: hidden;
+  }
+  .banner-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .banner-text {
+    flex-direction: column;
+    & h1 {
+      font-size: 70px;
+    }
+  }
+
+  .banner-paragraph-text {
+    /* width: auto; */
+  }
+
+  .banner-image {
+    /* width: 150%;
+    height: auto; */
+  }
+
+  .profile-image {
+    border-radius: 50%;
+  }
+
+  @media screen and (min-width: 636px) {
+    .banner-content {
+      flex-direction: row;
+    }
+
+    .banner-paragraph-text {
+      width: 70%;
+    }
+  }
+</style>

@@ -1,12 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Card from "../components/Card.astro"
+import HeroBanner from "../components/HeroBanner.astro"
 ---
 
 <Layout title="Louise Wright Homepage">
   <main>
-    <h1>Heyup I'm Louise Wright</h1>
-    <p class="">I make websites and I'm a badass front end developer</p>
+    <!-- <h1>Heyup I'm Louise Wright</h1>
+    <p class="">I make websites and I'm a badass front end developer</p> -->
+    <HeroBanner />
     <h2>Featured projects</h2>
     <ul role="list" class="link-card-layout">
       <Card
@@ -34,9 +36,9 @@ import Card from "../components/Card.astro"
 
   <style>
     main {
-      margin: auto;
+      /* margin: auto; */
       padding: 1.5rem;
-      max-width: 60ch;
+      /* max-width: 60ch; */
     }
     h1 {
       font-size: 3rem;
