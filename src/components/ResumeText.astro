@@ -1,0 +1,59 @@
+---
+export interface Props {
+  date: number
+  role: string
+  about: string
+}
+
+const { date, role, about } = Astro.props
+---
+
+<article>
+  <div class="text-container">
+    <div>
+      <h6 class="date">{date}</h6>
+    </div>
+    <div>
+      <div class="resume-text">
+        <h3>{role}</h3>
+      </div>
+      <p>
+        {about}
+      </p>
+    </div>
+  </div>
+</article>
+
+<style>
+  #resume {
+    background-color: pink;
+    padding: 12vw 6vw;
+  }
+
+  .resume-text {
+    font-size: calc(1em + 2vh);
+  }
+
+  .date {
+    align-self: flex-start;
+    margin-bottom: 0.2rem;
+    transform: rotate(-5deg);
+    padding-left: 0.2rem;
+    font-size: calc(1rem + 0.5vh);
+    font-style: italic;
+  }
+
+  @media screen and (min-width: 636px) {
+    #resume {
+      padding: 5vw 6vw;
+    }
+
+    .text-container {
+      display: flex;
+    }
+
+    .date {
+      margin-right: 20vh;
+    }
+  }
+</style>

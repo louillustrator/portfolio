@@ -1,0 +1,46 @@
+---
+import ResumeText from "./ResumeText.astro"
+---
+
+<section id="resume">
+  <div class="banner-content">
+    <div class="banner-header">
+      <h2>Mini CV</h2>
+    </div>
+    <ResumeText
+      date={2022}
+      role="Development Squad Lead"
+      about="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Donec acodio tempor orci dapibus ultrices in iaculis nunc. Blandit turpiscursus in hac habitasse platea"
+    />
+    <ResumeText
+      date={1989}
+      role="Front End Developer / UX Designer"
+      about="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Donec acodio tempor orci dapibus ultrices in iaculis nunc. Blandit turpiscursus in hac habitasse platea"
+    />
+    <ResumeText
+      date={2050}
+      role="Front End Developer / UX Designer"
+      about="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Donec acodio tempor orci dapibus ultrices in iaculis nunc. Blandit turpiscursus in hac habitasse platea"
+    />
+  </div>
+</section>
+
+<style>
+  #resume {
+    background-color: #eee3f8;
+    padding: 12vw 6vw;
+  }
+  .banner-content {
+    max-width: 80rem;
+  }
+
+  .banner-header {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (min-width: 636px) {
+    #resume {
+      padding: 5vw 6vw;
+    }
+  }
+</style>
