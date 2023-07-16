@@ -11,7 +11,7 @@
       <div id="container">
         <div class="card">
           <img
-            src="https://images.unsplash.com/photo-1536323760109-ca8c07450053"
+            src="/minh-triet-KTGBkzzE8BM-unsplash.jpg"
             alt="Lago di Braies"
           />
           <div class="card__details">
@@ -44,7 +44,7 @@
       <div id="container">
         <div class="card">
           <img
-            src="https://images.unsplash.com/photo-1536323760109-ca8c07450053"
+            src="/minh-triet-KTGBkzzE8BM-unsplash.jpg"
             alt="Lago di Braies"
           />
           <div class="card__details">
@@ -80,7 +80,7 @@
 
   #container {
     max-width: 300px;
-    margin-top: 10vh;
+    margin-top: 3vh;
     margin-right: 3vw;
   }
 
@@ -90,6 +90,7 @@
   }
 
   .card {
+    opacity: 0.4;
     border: 1px solid #787682;
     padding: 8px;
     border-radius: 12px;
@@ -112,6 +113,10 @@
   }
 
   @media screen and (min-width: 636px) {
+    #container {
+      max-width: none;
+    }
+
     .card-wrapper {
       display: flex;
       flex-direction: row;
